@@ -8,13 +8,16 @@ const home = async () => {
     ${Characters.results
       .map(
         (character) => `
-    
-          <article class="Character-item">
-           <a href="#/${character.id}/">
-             <img src="${character.image}" alt="${character.name}">
-               <h2>${character.name}</h2>
-            </a>
-          </article>
+
+        <div class="card" style="width: 18rem;">
+          <img src="${character.image}" class="card-img-top" alt="...">
+          <div class="card-body">
+           <h5 class="card-title">${character.name}</h5>
+           <a href="#/${character.id}/" class="btn btn-primary">Ver detalles</a>
+           </div>
+        </div>
+
+         
           `
       )
       .join("")}

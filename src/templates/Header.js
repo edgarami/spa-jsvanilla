@@ -1,20 +1,22 @@
 const Header = () => {
   const view = `
-  <div class="header-main">
-    <div class="header-logo">
 
-      <h1>
-        <a href="/">
-          100morty
-        </a>
-      </h1>
-    </div>
-    <div class="header-nav">
-      <a href="#about">
-      about
-      </a>
-    </div>
-  </div>
+   
+      
+       
+    
+         <div class="header-nav header-main ">
+      <nav class="navbar navbar-light ">
+       <img class='logo-rick' src="/src/images/rickandmorty.png">
+        <form class="form-inline  ">
+         <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+         <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+      </nav>
+  <div/>
+  
+      
+    
   `;
   return view;
 };
